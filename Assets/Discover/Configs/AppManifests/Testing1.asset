@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894b034db1e646d0856d4351fa3881fd, type: 3}
+  m_Name: Testing1
+  m_EditorClassIdentifier: 
+  UniqueName: Testing1
+  DisplayName: Testing1
+  Icon: {fileID: 21300000, guid: 3756fc154017a714a93175a7fe3f30f2, type: 3}
+  DisplayType: 0
+  IconSurfaceOrientation: 0
+  IconSurfaceType: 1
+  IconStartRotation: 90
+  IconPrefab: {fileID: 7408312654150406980, guid: 094c9c2fae1bc461386c9ce362b04647, type: 3}
+  DropIndicator: {fileID: 2324615606433838838, guid: f66de4ac8c7c54a85a50a101f2105817, type: 3}
+  AppPrefab: {fileID: 6173619910865530596, guid: 7c7d47e533952443c83d903303bc1ce8, type: 3}
