@@ -50,9 +50,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   costumeType: 0
+  team: 0
   costumeHeadPrefab: {fileID: 7508252132726113712, guid: f9a0dbac870ac47719030952cb6b23fb, type: 3}
   costumeHandLeftPrefab: {fileID: 0}
   costumeHandRightPrefab: {fileID: 0}
+  shieldIsLost: 0
+  lanceIsLost: 0
+  helmetIsLost: 0
+  shieldRotationSmooth: 1
+  lanceRotationSmooth: 10
   debugEquip: 0
   debugReturn: 0
 --- !u!114 &7727779397507212295
@@ -348,6 +354,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8355098230258062543, guid: f9a0dbac870ac47719030952cb6b23fb, type: 3}
   m_PrefabInstance: {fileID: 6163274696968660151}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3734187121806643342 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7375249987420550201, guid: f9a0dbac870ac47719030952cb6b23fb, type: 3}
+  m_PrefabInstance: {fileID: 6163274696968660151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448133828930560263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470b2f6510b064e89a14b568b9cc7a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4448133828930560263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7508252132726113712, guid: f9a0dbac870ac47719030952cb6b23fb, type: 3}
@@ -375,6 +392,7 @@ MonoBehaviour:
     RawGuidValue: 00000000000000000000000000000000
   NestedObjects: []
   NetworkedBehaviours:
+  - {fileID: 3734187121806643342}
   - {fileID: 66485265553754971}
   SimulationBehaviours: []
 --- !u!114 &66485265553754971

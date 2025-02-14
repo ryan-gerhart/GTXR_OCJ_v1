@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 1398215771160031387}
   - component: {fileID: 8204047109878586330}
   - component: {fileID: 1654567767885508956}
+  - component: {fileID: 7375249987420550201}
   m_Layer: 0
   m_Name: Knight Head
   m_TagString: Untagged
@@ -271,6 +272,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 8204047109878586330}
+  - {fileID: 7375249987420550201}
   SimulationBehaviours: []
 --- !u!114 &8204047109878586330
 MonoBehaviour:
@@ -312,3 +314,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62422687bb68a4620a2abcdb83fba053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  demoCostume: {fileID: 0}
+  lightHit: 5
+  mediumHit: 8
+  heavyHit: 10
+--- !u!114 &7375249987420550201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508252132726113712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470b2f6510b064e89a14b568b9cc7a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
