@@ -17,7 +17,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 0
+  m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -133,11 +133,13 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 1.1.68
+  bundleVersion: 1.1.73
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: e39466eaa11bc314b991fd0678f046b3, type: 2}
+  - {fileID: 11400000, guid: 7d7a0e475fae1ad47bb84dbb1aa98284, type: 2}
+  - {fileID: 9166461520806161978, guid: c8e364865e9455940bb653a1d5eb56fb, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -164,7 +166,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 85
+  AndroidBundleVersionCode: 90
   AndroidMinSdkVersion: 32
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -747,6 +749,7 @@ PlayerSettings:
     PS4: PHOTON_VOICE_DEFINED
     PS5: PHOTON_VOICE_DEFINED
     QNX: PHOTON_VOICE_DEFINED
+    Server: Networked;Start;Game
     Stadia: PHOTON_VOICE_DEFINED
     Standalone: OVR_PLATFORM_ASYNC_MESSAGES;FUSION_WEAVER;HAS_META_AVATARS;HAS_META_INTERACTION;PHOTON_VOICE_DEFINED
     VisionOS: PHOTON_VOICE_DEFINED
