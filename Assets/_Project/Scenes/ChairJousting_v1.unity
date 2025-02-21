@@ -3109,7 +3109,9 @@ MonoBehaviour:
   - {fileID: 744747292}
   - {fileID: 1286250436}
   - {fileID: 1459434816}
-  NetworkedBehaviours: []
+  NetworkedBehaviours:
+  - {fileID: 830275980}
+  - {fileID: 1468026202}
   SimulationBehaviours: []
 --- !u!114 &805395667 stripped
 MonoBehaviour:
@@ -3353,6 +3355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71702686f058f384bb3844f99f6ad539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
   networkRunner: {fileID: 0}
   networkProjectConfig:
     Version: 1
@@ -6014,6 +6017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71702686f058f384bb3844f99f6ad539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
   networkRunner: {fileID: 582342217}
   networkProjectConfig:
     Version: 1

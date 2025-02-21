@@ -3,7 +3,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class StartGame : MonoBehaviour
+public class StartGame : NetworkBehaviour
 {
     public NetworkRunner networkRunner;
     public NetworkProjectConfig networkProjectConfig;
@@ -60,8 +60,10 @@ public class StartGame : MonoBehaviour
     }
 
     public void GameStart() {
-        titleScreen.gameObject.SetActive(false);
-        scoreboard.gameObject.SetActive(true);
+        if (networkRunner.IsServer && titleScreen != null && scoreboard != null) {
+            networkRunner.Despawn(titleScreen);
+            networkRunner.Spawn(scoreboard);
+        }
     }
 
     void LogStatus(string message)
