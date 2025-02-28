@@ -5538,7 +5538,7 @@ MonoBehaviour:
     CheckNetworkedPropertiesBeingEmpty: 0
   isTitleScreen: 1
   titleScreen: {fileID: 794345469}
-  scoreboard: {fileID: 0}
+  scoreboard: {fileID: 7071017894837476813, guid: 2415a3945155b0049b2a7ceb6811a901, type: 3}
 --- !u!1 &1498468629
 GameObject:
   m_ObjectHideFlags: 0
