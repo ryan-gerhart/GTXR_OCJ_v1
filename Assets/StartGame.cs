@@ -9,6 +9,8 @@ public class StartGame : NetworkBehaviour
     public NetworkProjectConfig networkProjectConfig;
 
     private TextMeshPro statusText;
+
+    public bool isTitleScreen = true;
     [SerializeField] private NetworkObject titleScreen; // Assign the prefab in the Inspector
     [SerializeField] private NetworkObject scoreboard; // Assign the prefab in the Inspector
     
@@ -60,10 +62,9 @@ public class StartGame : NetworkBehaviour
     }
 
     public void GameStart() {
-        if (networkRunner.IsServer && titleScreen != null && scoreboard != null) {
-            networkRunner.Despawn(titleScreen);
-            networkRunner.Spawn(scoreboard);
-        }
+        SetVisibility(titleScreen, false);
+        LogStatus(networkRunner.IsServer.ToString());
+        networkRunner.Spawn(scoreboard, new Vector3(-0.1077434F, 0.3810699F, 3.595401F));
     }
 
     void LogStatus(string message)
@@ -97,5 +98,20 @@ public class StartGame : NetworkBehaviour
         }
 
         throw new ArgumentException($"Failed to register prefab with guid: {prefab.NetworkGuid}");
+    }
+
+    public void SetVisibility(NetworkObject netObj, bool isVisible)
+    {
+        Renderer[] renderers = netObj.GetComponentsInChildren<Renderer>();
+        foreach (Renderer rend in renderers)
+        {
+            rend.enabled = isVisible;
+        }
+
+        Collider[] colliders = netObj.GetComponentsInChildren<Collider>();
+        foreach (Collider coll in colliders)
+        {
+            coll.enabled = isVisible;
+        }
     }
 }
